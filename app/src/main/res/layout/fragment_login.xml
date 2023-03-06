@@ -44,6 +44,15 @@
         android:padding="6dp"
         android:textAppearance="@style/hint_text" />
 
+    <View
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignEnd="@+id/password"
+        android:layout_alignBottom="@+id/password"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/visibility_off" />
+
     <Button
         android:id="@+id/sing_in_btn"
         android:layout_width="289dp"
@@ -52,6 +61,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="96dp"
         android:text="Login"
+        android:fontFamily="@font/montserratbold"
         android:background="@drawable/button" />
 
 </RelativeLayout>

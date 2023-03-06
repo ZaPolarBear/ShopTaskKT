@@ -21,6 +21,23 @@
         />
 
 
+    <View
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/sign_in_google"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_toStartOf="@+id/sign_in_google"
+        android:background="@drawable/android" />
+
+    <View
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/sign_in_wit"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_toStartOf="@+id/sign_in_wit"
+        android:background="@drawable/controller" />
 
     <EditText
         android:id="@+id/first_name"
@@ -48,6 +65,7 @@
         android:gravity="center_horizontal|top"
         android:hint="@string/last_name"
         android:padding="6dp"
+
         android:textAppearance="@style/hint_text" />
 
 
@@ -72,11 +90,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:text="Sing In"
+        android:fontFamily="@font/montserratbold"
         android:background="@drawable/button" />
 
     <TextView
         android:id="@+id/already_hav"
-        android:layout_width="120dp"
+        android:layout_width="140dp"
         android:layout_height="16dp"
         android:layout_below="@+id/sing_in_btn"
         android:layout_alignParentLeft="true"
@@ -92,7 +111,7 @@
         android:layout_height="16dp"
         android:layout_below="@+id/sing_in_btn"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="160dp"
+        android:layout_marginLeft="180dp"
         android:layout_marginTop="15dp"
         android:gravity="center_horizontal|top"
         android:text="@string/log_in"
@@ -101,23 +120,23 @@
 
     <TextView
         android:id="@+id/sign_in_google"
-        android:layout_width="117dp"
+        android:layout_width="130dp"
         android:layout_height="16dp"
         android:layout_below="@+id/sing_in_btn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="105dp"
         android:gravity="top"
         android:text="@string/sign_in_wit"
-        android:textAppearance="@style/sign_in_wit" />
+        android:textAppearance="@style/usual_text" />
 
     <TextView
         android:id="@+id/sign_in_wit"
-        android:layout_width="117dp"
+        android:layout_width="130dp"
         android:layout_height="16dp"
         android:layout_below="@+id/sign_in_google"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="43dp"
         android:gravity="top"
-        android:text="@string/sign_in_wit"
-        android:textAppearance="@style/sign_in_wit" />
+        android:text="@string/sing_in_with_apple"
+        android:textAppearance="@style/usual_text" />
 </RelativeLayout>

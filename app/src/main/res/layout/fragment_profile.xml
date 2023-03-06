@@ -1,6 +1,283 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="55dp"
+        android:layout_height="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
+        android:text="@string/profile"
+        android:textAppearance="@style/profile"
+        android:gravity="center_horizontal|top"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="61.06dp"
+        android:layout_height="61.06dp"
+        android:layout_below="@+id/profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="168dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/profile_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:textAppearance="@style/usual_text" />
+
+    <Button
+        android:id="@+id/rectangle_9"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Upload item"
+        android:fontFamily="@font/montserratbold"
+        android:background="@drawable/button" />
+
+    <RelativeLayout
+        android:id="@+id/ellipse_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rectangle_9"
+        android:layout_alignStart="@+id/trade_store"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/circle">
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/credit_card"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/ellipse_1"
+        android:layout_marginStart="272dp"
+        android:layout_toEndOf="@+id/ellipse_1"
+        android:background="@drawable/arrow_forward_ios" />
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/ellipse_2"
+        android:layout_marginStart="272dp"
+        android:layout_toEndOf="@+id/ellipse_2"
+        android:background="@drawable/arrow_forward_ios" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/ellipse_3"
+        android:layout_marginStart="242dp"
+        android:layout_toEndOf="@+id/ellipse_3"
+        android:textAppearance="@style/usual_text"/>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/ellipse_4"
+        android:layout_marginStart="272dp"
+        android:layout_toEndOf="@+id/ellipse_4"
+        android:background="@drawable/arrow_forward_ios" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/ellipse_5"
+        android:layout_marginStart="272dp"
+        android:layout_toEndOf="@+id/ellipse_5"
+        android:background="@drawable/arrow_forward_ios" />
+
+    <TextView
+        android:id="@+id/trade_store"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:gravity="center_horizontal|top"
+        android:layout_below="@+id/rectangle_9"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/trade_store"
+        android:textAppearance="@style/usual_text" />
+
+    <RelativeLayout
+        android:id="@+id/ellipse_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ellipse_1"
+        android:layout_alignStart="@+id/payment_met"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/circle">
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/credit_card"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/payment_met"
+        android:layout_width="124dp"
+        android:layout_height="18dp"
+        android:gravity="center_horizontal|top"
+        android:layout_below="@+id/trade_store"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/payment_method"
+        android:textAppearance="@style/usual_text" />
+
+    <RelativeLayout
+        android:id="@+id/ellipse_3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ellipse_2"
+        android:layout_alignStart="@+id/payment_met"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle" >
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/credit_card"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="66dp"
+        android:layout_height="18dp"
+        android:gravity="center_horizontal|top"
+        android:layout_below="@+id/payment_met"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/balance"
+        android:textAppearance="@style/usual_text" />
+
+    <RelativeLayout
+        android:id="@+id/ellipse_4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ellipse_3"
+        android:layout_alignStart="@+id/trade_histo"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle">
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/credit_card"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/trade_histo"
+        android:layout_width="91dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/balance"
+        android:gravity="center_horizontal|top"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/trade_history"
+        android:textAppearance="@style/usual_text" />
+
+    <RelativeLayout
+        android:id="@+id/ellipse_5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ellipse_4"
+        android:layout_alignStart="@+id/restore_pur"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/circle">
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cached"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/restore_pur"
+        android:layout_width="124dp"
+        android:layout_height="18dp"
+        android:gravity="center_horizontal|top"
+        android:layout_below="@+id/trade_histo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/restore_purchase"
+        android:textAppearance="@style/usual_text" />
+
+    <RelativeLayout
+        android:id="@+id/ellipse_6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ellipse_5"
+        android:layout_alignStart="@+id/payment_met"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/circle" >
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/help"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="33dp"
+        android:layout_height="18dp"
+        android:gravity="center_horizontal|top"
+        android:layout_below="@+id/restore_pur"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/help"
+        android:textAppearance="@style/usual_text" />
+
+    <RelativeLayout
+        android:id="@+id/ellipse_7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ellipse_6"
+        android:layout_alignStart="@+id/payment_met"
+        android:layout_marginStart="-42dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle" >
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/logout"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/log_out"
+        android:layout_width="66dp"
+        android:layout_height="18dp"
+        android:gravity="center_horizontal|top"
+        android:layout_below="@+id/help"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/log_out"
+        android:textAppearance="@style/usual_text" />
+</RelativeLayout>
