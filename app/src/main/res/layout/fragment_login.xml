@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcome_back"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="127dp"
+        android:text="@string/welcome_back"
+        android:textStyle="bold"
+        android:textAppearance="@style/sign_in"
+        android:gravity="center_horizontal|top"
+        />
+
+
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/welcome_back"
+        android:background="@drawable/rectangle"
+        android:gravity="center_horizontal|top"
+        android:hint="@string/first_name"
+        android:padding="6dp"
+        android:textAppearance="@style/hint_text" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/first_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center_horizontal|top"
+        android:hint="@string/password"
+        android:padding="6dp"
+        android:textAppearance="@style/hint_text" />
+
+    <Button
+        android:id="@+id/sing_in_btn"
+        android:layout_width="289dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:text="Login"
+        android:background="@drawable/button" />
+
+</RelativeLayout>
