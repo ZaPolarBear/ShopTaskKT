@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="127dp"
+        android:text="@string/sign_in"
+        android:textStyle="bold"
+        android:textAppearance="@style/sign_in"
+        android:gravity="center_horizontal|top"
+        />
+
+
+    <View
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/sign_in_google"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_toStartOf="@+id/sign_in_google"
+        android:background="@drawable/android" />
+
+    <View
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/sign_in_wit"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_toStartOf="@+id/sign_in_wit"
+        android:background="@drawable/controller" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sign_in"
+        android:background="@drawable/rectangle"
+        android:gravity="center_horizontal|top"
+        android:hint="@string/first_name"
+        android:padding="6dp"
+        android:textAppearance="@style/hint_text" />
+
+
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/first_name"
+        android:background="@drawable/rectangle"
+        android:gravity="center_horizontal|top"
+        android:hint="@string/last_name"
+        android:padding="6dp"
+
+        android:textAppearance="@style/hint_text" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/last_name"
+        android:background="@drawable/rectangle"
+        android:padding="6dp"
+        android:gravity="center_horizontal|top"
+        android:hint="@string/email"
+        android:textAppearance="@style/hint_text" />
+
+    <Button
+        android:id="@+id/sing_in_btn"
+        android:layout_width="289dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Sing In"
+        android:fontFamily="@font/montserratbold"
+        android:background="@drawable/button" />
+
+    <TextView
+        android:id="@+id/already_hav"
+        android:layout_width="140dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/sing_in_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="15dp"
+        android:gravity="top"
+        android:text="@string/already_hav"
+        android:textAppearance="@style/hint_text" />
+
+    <TextView
+        android:id="@+id/log_in"
+        android:layout_width="35dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/sing_in_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/log_in"
+        android:textAppearance="@style/log_in" />
+
+
+    <TextView
+        android:id="@+id/sign_in_google"
+        android:layout_width="130dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/sing_in_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:gravity="top"
+        android:text="@string/sign_in_wit"
+        android:textAppearance="@style/usual_text" />
+
+    <TextView
+        android:id="@+id/sign_in_wit"
+        android:layout_width="130dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/sign_in_google"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:gravity="top"
+        android:text="@string/sing_in_with_apple"
+        android:textAppearance="@style/usual_text" />
+</RelativeLayout>

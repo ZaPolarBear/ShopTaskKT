@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "271570672644",
+    "project_id": "shoptaskkt",
+    "storage_bucket": "shoptaskkt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271570672644:android:40c04f788efb59e3ef6951",
+        "android_client_info": {
+          "package_name": "com.example.shoptaskkt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271570672644-tsufkrqrtga6rbc48vgr2r24cb01so04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm_r2bz5uom2vag8fGtA8k5c75Xkr11iI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271570672644-tsufkrqrtga6rbc48vgr2r24cb01so04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
