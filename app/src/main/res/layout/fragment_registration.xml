@@ -100,6 +100,18 @@
         android:gravity="top"
         android:text="@string/already_hav"
         android:textAppearance="@style/hint_text" />
+    <TextView
+        android:id="@+id/error_mail"
+        android:layout_width="140dp"
+        android:layout_height="16dp"
+        android:layout_below="@+id/already_hav"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="15dp"
+        android:gravity="top"
+        android:visibility="gone"
+        android:text="@string/wrong_mail"
+        android:textAppearance="@style/hint_text" />
 
     <TextView
         android:id="@+id/log_in"

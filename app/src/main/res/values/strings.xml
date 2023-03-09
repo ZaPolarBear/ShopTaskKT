@@ -44,4 +44,5 @@ Sign in with Google
     <string name="help">Help</string>
     <string name="log_out">Log out</string>
     <string name="sing_in_with_apple">Sing in with Apple</string>
+    <string name="wrong_mail">Wrong mail</string>
 </resources>

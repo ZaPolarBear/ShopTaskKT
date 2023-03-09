@@ -1,4 +1,4 @@
-package com.example.shoptaskkt.presentation.fragments
+package com.example.shoptaskkt.presentation
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.example.shoptaskkt.R
 import com.example.shoptaskkt.presentation.viewmodels.LoginViewModel
 

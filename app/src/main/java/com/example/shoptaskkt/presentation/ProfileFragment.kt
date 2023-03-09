@@ -1,4 +1,4 @@
-package com.example.shoptaskkt.presentation.fragments
+package com.example.shoptaskkt.presentation
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
